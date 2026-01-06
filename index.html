@@ -1,1 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSync | Academic Collaboration Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">📚</div>
+                <h1>EduSync</h1>
+                <span class="beta-tag">AI</span>
+            </div>
+            <div class="user-info">
+                <div class="notification">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </div>
+                <div class="user-avatar">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Student" alt="Student Avatar">
+                </div>
+            </div>
+        </header>
 
+        <!-- Main Dashboard -->
+        <main class="dashboard">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul class="nav-links">
+                    <li class="active">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-book"></i>
+                        <span>My Courses</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-tasks"></i>
+                        <span>Assignments</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Calendar</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Faculty</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-bullhorn"></i>
+                        <span>Notices</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-robot"></i>
+                        <span>AI Assistant</span>
+                    </li>
+                </ul>
+                
+                <!-- Course Groups -->
+                <div class="course-groups">
+                    <h3>My Course Groups</h3>
+                    <div class="course-group">
+                        <div class="course-icon">CS</div>
+                        <div class="course-info">
+                            <h4>Data Structures</h4>
+                            <p>CS-201 | Sec A</p>
+                        </div>
+                    </div>
+                    <div class="course-group">
+                        <div class="course-icon">MA</div>
+                        <div class="course-info">
+                            <h4>Calculus II</h4>
+                            <p>MA-102 | Sec B</p>
+                        </div>
+                    </div>
+                    <div class="course-group">
+                        <div class="course-icon">PH</div>
+                        <div class="course-info">
+                            <h4>Physics Lab</h4>
+                            <p>PH-110 | Sec C</p>
+                        </div>
+                    </div>
+                    <button class="join-course-btn">
+                        <i class="fas fa-plus"></i>
+                        Join New Course
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="main-content">
+                <!-- Welcome & AI Assistant -->
+                <div class="welcome-section">
+                    <div class="welcome-text">
+                        <h2>Welcome back, Alex!</h2>
+                        <p>You have <span class="highlight">3 pending assignments</span> and <span class="highlight">2 new notices</span> today.</p>
+                    </div>
+                    <div class="ai-assistant">
+                        <div class="ai-header">
+                            <i class="fas fa-robot"></i>
+                            <h3>AI Assistant</h3>
+                        </div>
+                        <div class="ai-chat">
+                            <p class="ai-question">What would you like to know?</p>
+                            <div class="ai-options">
+                                <button class="ai-option" data-question="homework">What homework is pending?</button>
+                                <button class="ai-option" data-question="deadline">What is the next deadline?</button>
+                                <button class="ai-option" data-question="notices">Any important notices today?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Stats -->
+                <div class="stats-section">
+                    <div class="stat-card">
+                        <div class="stat-icon pending">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>3</h3>
+                            <p>Pending Assignments</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon completed">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>12</h3>
+                            <p>Completed</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon upcoming">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>5</h3>
+                            <p>Upcoming Deadlines</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon notices">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>7</h3>
+                            <p>Active Notices</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assignment Tracker -->
+                <div class="assignment-tracker">
+                    <div class="section-header">
+                        <h2><i class="fas fa-tasks"></i> Assignment Tracker</h2>
+                        <div class="progress-indicator">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <span>80% Complete</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-tabs">
+                        <button class="subject-tab active" data-subject="all">All Subjects</button>
+                        <button class="subject-tab" data-subject="cs">Data Structures</button>
+                        <button class="subject-tab" data-subject="math">Calculus II</button>
+                        <button class="subject-tab" data-subject="physics">Physics Lab</button>
+                    </div>
+                    
+                    <div class="assignments-list">
+                        <!-- Assignment items will be populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Notice Board & Faculty Directory -->
+                <div class="notice-faculty-section">
+                    <!-- Notice Board -->
+                    <div class="notice-board">
+                        <div class="section-header">
+                            <h2><i class="fas fa-bullhorn"></i> Notice Board</h2>
+                            <button class="view-all">View All</button>
+                        </div>
+                        <div class="notices-list">
+                            <!-- Notice items will be populated by JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Faculty Directory -->
+                    <div class="faculty-directory">
+                        <div class="section-header">
+                            <h2><i class="fas fa-chalkboard-teacher"></i> Faculty Directory</h2>
+                            <button class="view-all">View All</button>
+                        </div>
+                        <div class="faculty-list">
+                            <!-- Faculty cards will be populated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Calendar -->
+                <div class="academic-calendar">
+                    <div class="section-header">
+                        <h2><i class="fas fa-calendar-alt"></i> Academic Calendar</h2>
+                        <div class="calendar-nav">
+                            <button class="calendar-btn"><i class="fas fa-chevron-left"></i></button>
+                            <span>November 2023</span>
+                            <button class="calendar-btn"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="calendar-view">
+                        <!-- Calendar will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- AI Chat Modal -->
+        <div class="ai-modal" id="aiModal">
+            <div class="ai-modal-content">
+                <div class="ai-modal-header">
+                    <h3><i class="fas fa-robot"></i> AI Assistant</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="ai-modal-body">
+                    <div class="ai-message ai-response">
+                        <p>Hello! I'm your AI assistant. How can I help you with your academic tasks today?</p>
+                    </div>
+                </div>
+                <div class="ai-modal-input">
+                    <input type="text" placeholder="Ask me anything about assignments, deadlines, notices...">
+                    <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
